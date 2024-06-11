@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chat-App</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+   
+  <div id="main">
+    <header class="d-flex">
+      <h1 style="text-align: center;color: red;font-size: 3vw;" class="text-red-500">Live Chat-App</h1>
+      <p class="text-red-500">username : <span class="username"></span></p>
+      
+    </header>
+    <div class="message-container d-flex">
+      <div class="message-box d-flex">
+        <div class="user-typing">
+          <small class="typingStatus"></small>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <form class="form d-flex gap-2" action="">
+        <div class="text-div d-flex" >
+          <div class="input-div">
+            <input type="text" class="input" placeholder="write your message here..." autofocus required/>
+          </div>
+        </div>
+        <button>Send</button>
+      </form>
+    </footer>
+  </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../javascripts/socket.js"></script>
+</body>
+</html>
